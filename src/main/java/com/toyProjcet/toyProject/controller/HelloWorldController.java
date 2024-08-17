@@ -19,12 +19,12 @@ public class HelloWorldController {
     public String test() throws Exception{
         List<DBConnTest> list =  dbConntestService.getDBConnTest();
 
-        String s = "";
+        StringBuilder s = new StringBuilder();
 
         for(DBConnTest dbConnTest : list) {
-            s += String.valueOf(dbConnTest.getTestId());
+            s.append(String.valueOf(dbConnTest.getTestId()));
         }
 
-        return s;
+        return s.toString();
     }
 }
