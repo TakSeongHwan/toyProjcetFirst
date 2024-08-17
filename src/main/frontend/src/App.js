@@ -12,7 +12,7 @@ function App() {
 
     return (
         <div>
-            헬로우 DB연동2! : {hello}
+            헬로우 DB연동2!  FROM HSB : {hello}
         </div>
     );
 }
